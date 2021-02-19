@@ -115,7 +115,7 @@ namespace BigTask2
 
 		private static IEnumerable<IEnumerable<string>> ReadInputs(string path)
 		{
-			using (StreamReader file = new StreamReader(path))
+			using (StreamReader file = new StreamReader("..\\..\\..\\" + path))
 			{
 				List<List<string>> allInputs = new List<List<string>>();
 				while (!file.EndOfStream)
